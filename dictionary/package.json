@@ -1,0 +1,13 @@
+{
+	"name": "dictionary",
+	"version": "1.0.0",
+	"description": "Dictionary app",
+	"main": "index.js",
+	"scripts": {},
+	"keywords": [
+		"JavaScript",
+		"Dictionary"
+	],
+	"author": "Levon Beglaryan",
+	"license": "ISC"
+}

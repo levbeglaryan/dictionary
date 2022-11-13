@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script type="module" defer src="js/index.js"></script>
+		<!-- Bootstrap start -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" defer integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" defer integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" defer integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<!-- Bootstrap end -->
+		<!-- Font Awesome start -->
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+		<!-- Font Awesome end -->
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<title>Dictionary App</title>
+	</head>
+	<body>
+		<div class="w-75 bg-white shadow-lg rounded my-3 mx-auto p-3 d-flex justify-content-center flex-column">
+			<div class="mb-3">
+				<h1 class="user-select-none text-center mb-4">English Dictionary</h1>
+				<div class="input-group m-1 border rounded">
+					<span id="clear_btn" class="clear_btn input-group-text bg-white border-0">
+						<i class="fa-solid fa-x"></i>
+					</span>
+					<input id="input" type="text" class="form-control border-0" placeholder="Word" autocomplete="off">
+				</div>
+				<span id="info" class="info text-center fw-light">Type a word and press enter to get meaning, pronunciation and synomyms of that typed word.</span>
+			</div>
+			<div>
+				<div class="mb-4 d-flex justify-content-between align-items-center">
+					<div class="word_info d-flex flex-column">
+						<h2 id="searched_word" class="mb-1"></h2>
+						<span id="word_phonetics"></span>
+					</div>
+					<div id="audio_box" class="sound_button"></div>
+				</div>
+				<div id="meaning_boxes"></div>
+			</div>
+		</div>
+	</body>
+</html>
